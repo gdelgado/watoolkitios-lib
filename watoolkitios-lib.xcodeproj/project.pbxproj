@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0945511348EE2900AF7EAB /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0945501348EE2900AF7EAB /* libxml2.2.dylib */; };
+		AA0945641349194600AF7EAB /* XmlHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0945621349194500AF7EAB /* XmlHelper.h */; };
+		AA0945651349194600AF7EAB /* XmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0945631349194600AF7EAB /* XmlHelper.m */; };
+		AA094579134A2ABB00AF7EAB /* Blob.h in Headers */ = {isa = PBXBuildFile; fileRef = AA094575134A2ABB00AF7EAB /* Blob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA09457A134A2ABB00AF7EAB /* Blob.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094576134A2ABB00AF7EAB /* Blob.m */; };
+		AA09457B134A2ABB00AF7EAB /* BlobContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA094577134A2ABB00AF7EAB /* BlobContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA09457C134A2ABB00AF7EAB /* BlobContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094578134A2ABB00AF7EAB /* BlobContainer.m */; };
+		AA094582134A2ACF00AF7EAB /* BlobParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AA09457E134A2ACF00AF7EAB /* BlobParser.h */; };
+		AA094583134A2ACF00AF7EAB /* BlobParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09457F134A2ACF00AF7EAB /* BlobParser.m */; };
+		AA094584134A2ACF00AF7EAB /* ContainerParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AA094580134A2ACF00AF7EAB /* ContainerParser.h */; };
+		AA094585134A2ACF00AF7EAB /* ContainerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094581134A2ACF00AF7EAB /* ContainerParser.m */; };
+		AA094589134A2BDB00AF7EAB /* CloudStorageClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AA094587134A2BDB00AF7EAB /* CloudStorageClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA09458A134A2BDB00AF7EAB /* CloudStorageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094588134A2BDB00AF7EAB /* CloudStorageClient.m */; };
+		AA09458C134A5A9D00AF7EAB /* AuthenticationCredential+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA09458B134A5A9D00AF7EAB /* AuthenticationCredential+Private.h */; };
+		AA6521DC134D1E0C00008ADE /* AzureFilterBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6521D6134D1E0C00008ADE /* AzureFilterBuilder.h */; };
+		AA6521DD134D1E0C00008ADE /* AzureFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6521D7134D1E0C00008ADE /* AzureFilterBuilder.m */; };
+		AA6521DE134D1E0C00008ADE /* PredicateParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6521D8134D1E0C00008ADE /* PredicateParser.h */; };
+		AA6521DF134D1E0C00008ADE /* PredicateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6521D9134D1E0C00008ADE /* PredicateParser.m */; };
+		AA6521E0134D1E0C00008ADE /* PredicateParserAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6521DA134D1E0C00008ADE /* PredicateParserAppDelegate.h */; };
+		AA6521E1134D1E0C00008ADE /* PredicateParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6521DB134D1E0C00008ADE /* PredicateParserAppDelegate.m */; };
+		AA6521E4134D1EE800008ADE /* TableFetchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6521E2134D1EE800008ADE /* TableFetchRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6521E5134D1EE800008ADE /* TableFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6521E3134D1EE800008ADE /* TableFetchRequest.m */; };
+		AA81D46A134D0CF400866C7C /* AtomPubEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = AA81D468134D0CF400866C7C /* AtomPubEntry.h */; };
+		AA81D46B134D0CF400866C7C /* AtomPubEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = AA81D469134D0CF400866C7C /* AtomPubEntry.m */; };
+		AA8ACF4D134524B200D5F316 /* AuthenticationCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8ACF4B134524B200D5F316 /* AuthenticationCredential.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8ACF4E134524B200D5F316 /* AuthenticationCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACF4C134524B200D5F316 /* AuthenticationCredential.m */; };
+		AA8AD01A13454C1C00D5F316 /* CloudURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8AD01813454C1C00D5F316 /* CloudURLRequest.h */; };
+		AA8AD01B13454C1C00D5F316 /* CloudURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8AD01913454C1C00D5F316 /* CloudURLRequest.m */; };
+		AABD4A50134D02C400B6E7D1 /* TableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = AABD4A4E134D02C400B6E7D1 /* TableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABD4A51134D02C400B6E7D1 /* TableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABD4A4F134D02C400B6E7D1 /* TableEntity.m */; };
+		AAD7348C134D2C22000AB68A /* NSString+URLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD7348A134D2C21000AB68A /* NSString+URLEncode.h */; };
+		F216A688136F88BC00FAEAB4 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F216A684136F88BC00FAEAB4 /* Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F216A689136F88BC00FAEAB4 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = F216A685136F88BC00FAEAB4 /* Queue.m */; };
+		F216A68A136F88BC00FAEAB4 /* QueueMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F216A686136F88BC00FAEAB4 /* QueueMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F216A68B136F88BC00FAEAB4 /* QueueMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F216A687136F88BC00FAEAB4 /* QueueMessage.m */; };
+		F216A690136F895900FAEAB4 /* QueueMessageParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F216A68C136F895900FAEAB4 /* QueueMessageParser.h */; };
+		F216A691136F895900FAEAB4 /* QueueMessageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F216A68D136F895900FAEAB4 /* QueueMessageParser.m */; };
+		F216A692136F895900FAEAB4 /* QueueParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F216A68E136F895900FAEAB4 /* QueueParser.h */; };
+		F216A693136F895900FAEAB4 /* QueueParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F216A68F136F895900FAEAB4 /* QueueParser.m */; };
+		F22358A0135F2C9600565900 /* SimpleBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F223589E135F2C9600565900 /* SimpleBase64.h */; };
+		F22358A1135F2C9600565900 /* SimpleBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F223589F135F2C9600565900 /* SimpleBase64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA0945501348EE2900AF7EAB /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		AA0945621349194500AF7EAB /* XmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlHelper.h; sourceTree = "<group>"; };
+		AA0945631349194600AF7EAB /* XmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlHelper.m; sourceTree = "<group>"; };
+		AA094575134A2ABB00AF7EAB /* Blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blob.h; sourceTree = "<group>"; };
+		AA094576134A2ABB00AF7EAB /* Blob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blob.m; sourceTree = "<group>"; };
+		AA094577134A2ABB00AF7EAB /* BlobContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobContainer.h; sourceTree = "<group>"; };
+		AA094578134A2ABB00AF7EAB /* BlobContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobContainer.m; sourceTree = "<group>"; };
+		AA09457E134A2ACF00AF7EAB /* BlobParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobParser.h; sourceTree = "<group>"; };
+		AA09457F134A2ACF00AF7EAB /* BlobParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobParser.m; sourceTree = "<group>"; };
+		AA094580134A2ACF00AF7EAB /* ContainerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerParser.h; sourceTree = "<group>"; };
+		AA094581134A2ACF00AF7EAB /* ContainerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerParser.m; sourceTree = "<group>"; };
+		AA094587134A2BDB00AF7EAB /* CloudStorageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageClient.h; sourceTree = "<group>"; };
+		AA094588134A2BDB00AF7EAB /* CloudStorageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageClient.m; sourceTree = "<group>"; };
+		AA09458B134A5A9D00AF7EAB /* AuthenticationCredential+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AuthenticationCredential+Private.h"; sourceTree = "<group>"; };
+		AA6521D6134D1E0C00008ADE /* AzureFilterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureFilterBuilder.h; sourceTree = "<group>"; };
+		AA6521D7134D1E0C00008ADE /* AzureFilterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureFilterBuilder.m; sourceTree = "<group>"; };
+		AA6521D8134D1E0C00008ADE /* PredicateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParser.h; sourceTree = "<group>"; };
+		AA6521D9134D1E0C00008ADE /* PredicateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParser.m; sourceTree = "<group>"; };
+		AA6521DA134D1E0C00008ADE /* PredicateParserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParserAppDelegate.h; sourceTree = "<group>"; };
+		AA6521DB134D1E0C00008ADE /* PredicateParserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParserAppDelegate.m; sourceTree = "<group>"; };
+		AA6521E2134D1EE800008ADE /* TableFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableFetchRequest.h; sourceTree = "<group>"; };
+		AA6521E3134D1EE800008ADE /* TableFetchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableFetchRequest.m; sourceTree = "<group>"; };
+		AA81D468134D0CF400866C7C /* AtomPubEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomPubEntry.h; sourceTree = "<group>"; };
+		AA81D469134D0CF400866C7C /* AtomPubEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtomPubEntry.m; sourceTree = "<group>"; };
+		AA8ACF4B134524B200D5F316 /* AuthenticationCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationCredential.h; sourceTree = "<group>"; };
+		AA8ACF4C134524B200D5F316 /* AuthenticationCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationCredential.m; sourceTree = "<group>"; };
+		AA8AD01813454C1C00D5F316 /* CloudURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudURLRequest.h; sourceTree = "<group>"; };
+		AA8AD01913454C1C00D5F316 /* CloudURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudURLRequest.m; sourceTree = "<group>"; };
+		AABD4A4E134D02C400B6E7D1 /* TableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableEntity.h; sourceTree = "<group>"; };
+		AABD4A4F134D02C400B6E7D1 /* TableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableEntity.m; sourceTree = "<group>"; };
+		AAD7348A134D2C21000AB68A /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		F216A684136F88BC00FAEAB4 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		F216A685136F88BC00FAEAB4 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		F216A686136F88BC00FAEAB4 /* QueueMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessage.h; sourceTree = "<group>"; };
+		F216A687136F88BC00FAEAB4 /* QueueMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessage.m; sourceTree = "<group>"; };
+		F216A68C136F895900FAEAB4 /* QueueMessageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessageParser.h; sourceTree = "<group>"; };
+		F216A68D136F895900FAEAB4 /* QueueMessageParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessageParser.m; sourceTree = "<group>"; };
+		F216A68E136F895900FAEAB4 /* QueueParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueParser.h; sourceTree = "<group>"; };
+		F216A68F136F895900FAEAB4 /* QueueParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueParser.m; sourceTree = "<group>"; };
+		F223589E135F2C9600565900 /* SimpleBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBase64.h; sourceTree = "<group>"; };
+		F223589F135F2C9600565900 /* SimpleBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleBase64.m; sourceTree = "<group>"; };
+		F2AE6FF6134E265200A76E43 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		F4F5239B1374612A004434B5 /* libwatoolkitios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwatoolkitios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27E7D68B1345118600F142F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0945511348EE2900AF7EAB /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5239B1374612A004434B5 /* libwatoolkitios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27E7D65C13450FF500F142F7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AA8AD01713454C0D00D5F316 /* Private */,
+				27E7D6611345103C00F142F7 /* Authentication */,
+				AA094586134A2BA600AF7EAB /* Cloud Storage */,
+				AA094574134A2ABB00AF7EAB /* Model */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		27E7D6611345103C00F142F7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AA8ACF4B134524B200D5F316 /* AuthenticationCredential.h */,
+				AA8ACF4C134524B200D5F316 /* AuthenticationCredential.m */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE6FF6134E265200A76E43 /* libxml2.2.dylib */,
+				27E7D65C13450FF500F142F7 /* Library */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0945501348EE2900AF7EAB /* libxml2.2.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA094558134904D800AF7EAB /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				F223589E135F2C9600565900 /* SimpleBase64.h */,
+				F223589F135F2C9600565900 /* SimpleBase64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		AA094574134A2ABB00AF7EAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F216A684136F88BC00FAEAB4 /* Queue.h */,
+				F216A685136F88BC00FAEAB4 /* Queue.m */,
+				F216A686136F88BC00FAEAB4 /* QueueMessage.h */,
+				F216A687136F88BC00FAEAB4 /* QueueMessage.m */,
+				AA094575134A2ABB00AF7EAB /* Blob.h */,
+				AA094576134A2ABB00AF7EAB /* Blob.m */,
+				AA094577134A2ABB00AF7EAB /* BlobContainer.h */,
+				AA094578134A2ABB00AF7EAB /* BlobContainer.m */,
+				AABD4A4E134D02C400B6E7D1 /* TableEntity.h */,
+				AABD4A4F134D02C400B6E7D1 /* TableEntity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA09457D134A2ACF00AF7EAB /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				F216A68C136F895900FAEAB4 /* QueueMessageParser.h */,
+				F216A68D136F895900FAEAB4 /* QueueMessageParser.m */,
+				F216A68E136F895900FAEAB4 /* QueueParser.h */,
+				F216A68F136F895900FAEAB4 /* QueueParser.m */,
+				AA81D468134D0CF400866C7C /* AtomPubEntry.h */,
+				AA81D469134D0CF400866C7C /* AtomPubEntry.m */,
+				AA09457E134A2ACF00AF7EAB /* BlobParser.h */,
+				AA09457F134A2ACF00AF7EAB /* BlobParser.m */,
+				AA094580134A2ACF00AF7EAB /* ContainerParser.h */,
+				AA094581134A2ACF00AF7EAB /* ContainerParser.m */,
+				AA0945621349194500AF7EAB /* XmlHelper.h */,
+				AA0945631349194600AF7EAB /* XmlHelper.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		AA094586134A2BA600AF7EAB /* Cloud Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AA094587134A2BDB00AF7EAB /* CloudStorageClient.h */,
+				AA094588134A2BDB00AF7EAB /* CloudStorageClient.m */,
+				AA6521E2134D1EE800008ADE /* TableFetchRequest.h */,
+				AA6521E3134D1EE800008ADE /* TableFetchRequest.m */,
+			);
+			path = "Cloud Storage";
+			sourceTree = "<group>";
+		};
+		AA6521D5134D1E0C00008ADE /* PredicateConverter */ = {
+			isa = PBXGroup;
+			children = (
+				AA6521D6134D1E0C00008ADE /* AzureFilterBuilder.h */,
+				AA6521D7134D1E0C00008ADE /* AzureFilterBuilder.m */,
+				AA6521D8134D1E0C00008ADE /* PredicateParser.h */,
+				AA6521D9134D1E0C00008ADE /* PredicateParser.m */,
+				AA6521DA134D1E0C00008ADE /* PredicateParserAppDelegate.h */,
+				AA6521DB134D1E0C00008ADE /* PredicateParserAppDelegate.m */,
+			);
+			path = PredicateConverter;
+			sourceTree = "<group>";
+		};
+		AA8AD01713454C0D00D5F316 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				AA6521D5134D1E0C00008ADE /* PredicateConverter */,
+				AA09457D134A2ACF00AF7EAB /* Parser */,
+				AA094558134904D800AF7EAB /* Base64 */,
+				AA8AD01813454C1C00D5F316 /* CloudURLRequest.h */,
+				AA8AD01913454C1C00D5F316 /* CloudURLRequest.m */,
+				AA09458B134A5A9D00AF7EAB /* AuthenticationCredential+Private.h */,
+				AAD7348A134D2C21000AB68A /* NSString+URLEncode.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27E7D6891345118600F142F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8ACF4D134524B200D5F316 /* AuthenticationCredential.h in Headers */,
+				AA094589134A2BDB00AF7EAB /* CloudStorageClient.h in Headers */,
+				AA6521E4134D1EE800008ADE /* TableFetchRequest.h in Headers */,
+				AA09457B134A2ABB00AF7EAB /* BlobContainer.h in Headers */,
+				F216A688136F88BC00FAEAB4 /* Queue.h in Headers */,
+				F216A68A136F88BC00FAEAB4 /* QueueMessage.h in Headers */,
+				AABD4A50134D02C400B6E7D1 /* TableEntity.h in Headers */,
+				AA094579134A2ABB00AF7EAB /* Blob.h in Headers */,
+				AA8AD01A13454C1C00D5F316 /* CloudURLRequest.h in Headers */,
+				AA0945641349194600AF7EAB /* XmlHelper.h in Headers */,
+				AA094582134A2ACF00AF7EAB /* BlobParser.h in Headers */,
+				AA094584134A2ACF00AF7EAB /* ContainerParser.h in Headers */,
+				AA09458C134A5A9D00AF7EAB /* AuthenticationCredential+Private.h in Headers */,
+				AA81D46A134D0CF400866C7C /* AtomPubEntry.h in Headers */,
+				AA6521DC134D1E0C00008ADE /* AzureFilterBuilder.h in Headers */,
+				AA6521DE134D1E0C00008ADE /* PredicateParser.h in Headers */,
+				AA6521E0134D1E0C00008ADE /* PredicateParserAppDelegate.h in Headers */,
+				AAD7348C134D2C22000AB68A /* NSString+URLEncode.h in Headers */,
+				F22358A0135F2C9600565900 /* SimpleBase64.h in Headers */,
+				F216A690136F895900FAEAB4 /* QueueMessageParser.h in Headers */,
+				F216A692136F895900FAEAB4 /* QueueParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27E7D68C1345118600F142F7 /* watoolkitios-lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E7D690134511A500F142F7 /* Build configuration list for PBXNativeTarget "watoolkitios-lib" */;
+			buildPhases = (
+				27E7D6891345118600F142F7 /* Headers */,
+				27E7D68A1345118600F142F7 /* Sources */,
+				27E7D68B1345118600F142F7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watoolkitios-lib";
+			productName = AzureToolkitLibrary;
+			productReference = F4F5239B1374612A004434B5 /* libwatoolkitios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "watoolkitios-lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27E7D68C1345118600F142F7 /* watoolkitios-lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E7D68A1345118600F142F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA81D46B134D0CF400866C7C /* AtomPubEntry.m in Sources */,
+				AA8ACF4E134524B200D5F316 /* AuthenticationCredential.m in Sources */,
+				AA6521DD134D1E0C00008ADE /* AzureFilterBuilder.m in Sources */,
+				AA09457A134A2ABB00AF7EAB /* Blob.m in Sources */,
+				AA09457C134A2ABB00AF7EAB /* BlobContainer.m in Sources */,
+				AA094583134A2ACF00AF7EAB /* BlobParser.m in Sources */,
+				AA09458A134A2BDB00AF7EAB /* CloudStorageClient.m in Sources */,
+				AA8AD01B13454C1C00D5F316 /* CloudURLRequest.m in Sources */,
+				AA094585134A2ACF00AF7EAB /* ContainerParser.m in Sources */,
+				AA6521DF134D1E0C00008ADE /* PredicateParser.m in Sources */,
+				AA6521E1134D1E0C00008ADE /* PredicateParserAppDelegate.m in Sources */,
+				AABD4A51134D02C400B6E7D1 /* TableEntity.m in Sources */,
+				AA6521E5134D1EE800008ADE /* TableFetchRequest.m in Sources */,
+				AA0945651349194600AF7EAB /* XmlHelper.m in Sources */,
+				F22358A1135F2C9600565900 /* SimpleBase64.m in Sources */,
+				F216A689136F88BC00FAEAB4 /* Queue.m in Sources */,
+				F216A68B136F88BC00FAEAB4 /* QueueMessage.m in Sources */,
+				F216A691136F895900FAEAB4 /* QueueMessageParser.m in Sources */,
+				F216A693136F895900FAEAB4 /* QueueParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27E7D68E1345118700F142F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = watoolkitios;
+				PUBLIC_HEADERS_FOLDER_PATH = "/watoolkitios-lib/include";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27E7D68F1345118700F142F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				PREBINDING = NO;
+				PRODUCT_NAME = watoolkitios;
+				PUBLIC_HEADERS_FOLDER_PATH = "/watoolkitios-lib/include";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E7D690134511A500F142F7 /* Build configuration list for PBXNativeTarget "watoolkitios-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E7D68E1345118700F142F7 /* Debug */,
+				27E7D68F1345118700F142F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "watoolkitios-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
