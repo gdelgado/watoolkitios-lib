@@ -23,7 +23,7 @@
 #import "CloudURLRequest.h"
 #import "XmlHelper.h"
 
-static NSString* PROXY_LOGIN_REQUEST_STRING =@"<LoginModel xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Microsoft.Samples.WindowsPhoneCloud.StorageClient.Credentials\"><Password>{password}</Password><UserName>{username}</UserName></LoginModel>";
+static NSString* PROXY_LOGIN_REQUEST_STRING =@"<Login xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Microsoft.Samples.WindowsPhoneCloud.StorageClient.Credentials\"><Password>{password}</Password><UserName>{username}</UserName></Login>";
 
 const int AUTHENTICATION_DELAY = 2;
 
